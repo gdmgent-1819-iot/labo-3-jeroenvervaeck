@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Colorpicker | Internet of Things | New Media Development</title>
+  
+  <style>
+    .colorS {
+	width: 200px;
+	height: 200px;
+    }
+  </style>
+  
+</head>
+<body>
+    <div>
+      <h1>Colorpicker</h1>
+      <form method='POST' action=''>
+	<input placeholder='kies een kleur' type='color' name='colorField'>
+	<input type='submit'>
+      </form>
+      <div class="colorS" style="background-color: {{ colorpicker['value'] }}"><p></p></div>
+    </div>
+</body>
+</html>
